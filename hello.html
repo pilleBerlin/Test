@@ -10,13 +10,18 @@
 	<li> git clone 'URL' // Kopiert das Repository von der URL in deinen Verzeichnis</li>
         <li> git add <filename> //Diese Datei wird überwacht und dem Repository zur Verfügung gestellt</li>
         <li> git commit -m "message" filename //Mach einen Snapshot und sichere es im lokalen Repository </li>
+	<li> git commit -am "message"// kombiniert "add" und "message"</li>
         <li> git status //gibt den aktuellen Status zurück, bsp. was zu tun ist, welcher branch etc. </li>
         <li> git push // alle Daten die markiert sind und commitet, werden an git gesendet</li>
+	     <li> git push --set-upstream origin ((branch))//senden den neuen Branch und erstellt die Korrespondenz ((branch))</li>
         <li> git pull //alle neuen Daten werden heruntergeladen </li>
         <li> git log //zeigt <b>alle</b> Commitments an, mit einem Hashtag, eindeutig </li>
         <li> git reset --hard <commit> || //Die Version wird auf die <commit> zurück gesetzt!</li>
 	<li> git branch // Zeigt alle Branches im Repository an, das mit Stern ist der aktive Branch!</li>
-	<li> git branch (name)// legt einen Branch mit dem Namen (namen> an</li>
+	<li> git branch (name)// legt einen Branch mit dem Namen (namen) an</li>
+	<li> git checkout branchname// wechselt zum neuen Branch</li>
+	<li> git merge ((Branch))// Merged den Branch ((Branch)) in den aktuellen Branch</li>
+	
      </ul>
      <hr/>
      <p>Konflikt bei push</p><hr/>
