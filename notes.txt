@@ -1,0 +1,8 @@
+Different kinds of notes to responsive Designs
+
+- Viewport
+- Media Queries
+- Flexbox
+- Grids
+
+=============
