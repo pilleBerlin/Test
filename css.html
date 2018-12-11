@@ -29,12 +29,28 @@
         <hr/>
         
         <p class"screen-only">Wird nicht ausgedruckt</p>
-        <style>@media print{
-          .screen-only{
-              display: none;
+        <style>
+          @media print{
+            .screen-only{
+                display: none;
+              }
             }
-          }
         </style>
     
+        <p>unterschiedliche Grössen</p>
+         <style>
+          @media (min-width: 500px){ //alles was die Mindestgrösse von 500 px ist
+            body{
+                background-color: red;
+              }
+            }
+           
+            @media (max-width: 499px){ //alles was kleiner als 499 ist
+            body{
+                background-color: red;
+              }
+            }
+        </style>
+        
   </body>
 </html>
