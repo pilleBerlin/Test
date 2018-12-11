@@ -37,7 +37,7 @@
             }
         </style>
     
-        <p>unterschiedliche Grössen</p>
+        <p>unterschiedliche Grössen hintergrundfarbe</p>
          <style>
           @media (min-width: 500px){ //alles was die Mindestgrösse von 500 px ist
             body{
@@ -48,6 +48,22 @@
             @media (max-width: 499px){ //alles was kleiner als 499 ist
             body{
                 background-color: blue;
+              }
+            }
+        </style>
+        
+         <p>unterschiedliche Grössen h1</p>
+        <p>Auf der Seite steht: < h1 > inline also <></> // in den h1 tags steht nichts, das wird über die CSS übernommen</p>
+         <style>
+          @media (min-width: 500px){ //alles was die Mindestgrösse von 500 px ist
+            h1::before{
+               content: "Willkommen auf meiner Seite!";
+              }
+            }
+           
+            @media (max-width: 499px){ //alles was kleiner als 499 ist
+            h1::before{
+               content: "Hi, Willkommen!";
               }
             }
         </style>
